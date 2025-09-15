@@ -1,99 +1,98 @@
 # YouTube Data Analysis Project
 
-Analysis of YouTube trending videos and user engagement patterns across multiple countries.
+**Company Name:** YouTube (Google)
 
-## Overview
+**Problem:** Understanding user engagement patterns and content performance across different countries and categories to optimize content strategy and improve user experience.
 
-This project analyzes YouTube trending videos and user comments to extract insights about content performance, user engagement, and sentiment patterns. The analysis covers 10 countries and 691,374 comments from trending videos.
+## Simple Insights:
 
-## Key Results
+• **Sentiment Analysis:** 38.9% positive, 49.1% neutral, 11.9% negative comments across 691K+ user comments
 
-- Average Sentiment Polarity: 0.138 (slightly positive)
-- Most Engaging Category: Music (158,632 average likes)
-- Top Trending Channel: The Late Show with Stephen Colbert (710 trending videos)
-- Engagement Metrics: 3.64% like rate, 0.22% dislike rate, 0.57% comment rate
-- Sentiment Distribution: 38.9% Positive, 49.1% Neutral, 11.9% Negative comments
+• **Category Performance:** Music leads with 158,632 average likes, followed by Comedy (38,771) and Nonprofits & Activism (30,698)
 
-## Analysis Features
+• **Top Trending Channel:** The Late Show with Stephen Colbert with 710 trending videos
 
-- Sentiment Analysis using TextBlob
-- Word Cloud Generation for positive/negative sentiment
-- Emoji Usage Analysis
-- Category Performance Analysis
-- Channel Trending Analysis
-- Engagement Metrics Calculation
-- Content Characteristics Analysis
-- Data Export (CSV, JSON, SQLite)
+• **Engagement Metrics:** 3.64% like rate, 0.22% dislike rate, 0.57% comment rate
 
-## Technologies Used
+• **Geographic Coverage:** Analysis across 10 countries (US, CA, DE, FR, GB, IN, JP, KR, MX, RU)
 
-- Python 3.x
-- Pandas, NumPy
-- Matplotlib, Seaborn
-- TextBlob, WordCloud
-- SQLite, SQLAlchemy
-- Jupyter Notebook
+• **Most Used Emojis:** 😂 (36,987 times), 😍 (33,453 times), ❤️ (31,119 times)
 
-## Installation
+## Aims Grid:
 
-1. Clone the repository
-   ```bash
-   git clone https://github.com/nishant-bansod/youtube-data-analysis.git
-   cd youtube-data-analysis
-   ```
+• **Purpose of the project:** To analyze YouTube trending videos and user engagement patterns to extract actionable insights about content performance, user sentiment, and engagement metrics across multiple countries
 
-2. Install required packages
-   ```bash
-   pip install pandas numpy matplotlib seaborn textblob wordcloud sqlalchemy emoji
-   ```
+• **Stakeholders:** Content Creators, Marketing Teams, Data Analytics Teams, Product Managers, Business Intelligence Teams
 
-3. Run the analysis
-   ```bash
-   jupyter notebook youtube_data_analysis.ipynb
-   ```
+• **End Result:** Comprehensive analysis providing insights into user sentiment, category performance, channel success factors, and engagement patterns to support data-driven content strategy decisions
 
-## Dataset Information
+• **Success Criteria:**
+    - Successfully analyzed 691K+ comments and 339K+ video records
+    - Identified key performance indicators for content categories
+    - Generated actionable insights for content optimization
+    - Created multiple data export formats for stakeholder consumption
+    - Demonstrated proficiency in data analysis, sentiment analysis, and visualization
 
-### Video Data
+## Dataset Information:
+
+**Video Data:**
 - Countries: US, CA, DE, FR, GB, IN, JP, KR, MX, RU
 - Total Videos: 339,525 (after deduplication)
 - Categories: 18 different video categories
 - Time Period: 2017-2018 trending data
 
-### Comments Data
+**Comments Data:**
 - Total Comments: 691,374
 - Features: video_id, comment_text, likes, replies
 - Sentiment Analysis: Polarity scores (-1 to 1)
 
-## Top Categories by Average Likes
+## Key Visualizations:
 
-1. Music (158,632 avg likes)
-2. Comedy (38,771 avg likes)
-3. Nonprofits & Activism (30,698 avg likes)
-4. Science & Technology (27,634 avg likes)
-5. Entertainment (24,421 avg likes)
-6. Gaming (24,131 avg likes)
-7. Film & Animation (23,875 avg likes)
-8. Movies (19,808 avg likes)
-9. Howto & Style (17,479 avg likes)
-10. Sports (15,426 avg likes)
+![Sentiment Analysis](screenshots/sentiment_analysis.png)
+*Distribution of sentiment polarity across user comments*
 
-## Usage Example
+![Category Performance](screenshots/category_performance.png)
+*Average likes by video category*
 
-```python
-import pandas as pd
-from textblob import TextBlob
+![Word Cloud](screenshots/word_cloud.png)
+*Word cloud visualization of positive comments*
 
-# Load data
-comments = pd.read_csv('data/UScomments.csv')
-videos = pd.read_csv('additional_data/USvideos.csv')
+![Channel Analysis](screenshots/channel_analysis.png)
+*Top channels by number of trending videos*
 
-# Analyze sentiment
-polarity = TextBlob("This video is amazing!").sentiment.polarity
-print(f"Sentiment polarity: {polarity}")
+## Concepts Used:
+
+• **Data Cleaning & Preprocessing:** Handling missing values, removing duplicates, data validation
+
+• **Sentiment Analysis:** TextBlob implementation for polarity scoring
+
+• **Statistical Analysis:** Correlation analysis, descriptive statistics, pattern recognition
+
+• **Data Visualization:** Matplotlib, Seaborn for charts, histograms, heatmaps, word clouds
+
+• **Database Management:** SQLite integration for data storage and retrieval
+
+• **Feature Engineering:** Creating engagement metrics (like_rate, comment_rate, dislike_rate)
+
+• **Exploratory Data Analysis:** Understanding data distribution and relationships
+
+## Technologies Used:
+
+- **Python 3.x**
+- **Pandas, NumPy** - Data manipulation and analysis
+- **Matplotlib, Seaborn** - Data visualization
+- **TextBlob, WordCloud** - Natural language processing
+- **SQLite, SQLAlchemy** - Database management
+- **Jupyter Notebook** - Development environment
+
+## Installation:
+
+```bash
+git clone https://github.com/nishant-bansod/youtube-data-analysis.git
+cd youtube-data-analysis
+pip install pandas numpy matplotlib seaborn textblob wordcloud sqlalchemy emoji
+jupyter notebook youtube_data_analysis.ipynb
 ```
 
-## Author
+**GitHub Repository:** [https://github.com/nishant-bansod/youtube-data-analysis](https://github.com/nishant-bansod/youtube-data-analysis)
 
-Nishant Bansod
-- GitHub: [@nishant-bansod](https://github.com/nishant-bansod)
