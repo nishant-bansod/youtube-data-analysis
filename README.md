@@ -48,17 +48,14 @@
 
 ## Key Visualizations:
 
-![Sentiment Analysis](screenshots/sentiment_analysis.png)
-*Distribution of sentiment polarity across user comments*
+![Emoji Analysis](screenshots/cell%2010.png)
+*Top 10 most used emojis in YouTube comments*
 
-![Category Performance](screenshots/category_performance.png)
-*Average likes by video category*
+![Correlation Analysis](screenshots/cell%2015.png)
+*Correlation heatmap showing relationships between views, likes, dislikes, and comments*
 
-![Word Cloud](screenshots/word_cloud.png)
-*Word cloud visualization of positive comments*
-
-![Channel Analysis](screenshots/channel_analysis.png)
-*Top channels by number of trending videos*
+![Title Characteristics](screenshots/cell%2017.png)
+*Analysis of how punctuation in video titles affects engagement metrics*
 
 ## Concepts Used:
 
